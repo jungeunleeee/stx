@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+/* common */
+#aside-box {position: fixed; left: 0; top: 0; width: 160px; height: 100%; box-sizing: border-box; background-color: #323232; z-index: 1000000;}
+#header {}
+#header > div.content-box {}
+#header > div.content-box > h1 {background-color: #fff; height: 69.5px; box-sizing: border-box;}
+#header > div.content-box > h1 > a {display: block; width: 100%; height: 100%; text-align: center; box-sizing: border-box;line-height: 69.5px;}
+#header > div.content-box > h1 > a > img {text-align: center; height: auto; position: relative; top: -5px;}
+
+#gnb {}
+#gnb > .gnb-list {padding: 40px 15px;}
+#gnb > .gnb-list > li {text-align: right; margin-bottom: 24px;}
+#gnb > .gnb-list > li > a {display: block; width: 100%; height: 100%; position: relative;}
+#gnb > .gnb-list > li > a > img {width: auto; position: relative; top: -2px; right: 20px;}
+#gnb > .gnb-list > li:hover > a::after {content:''; width: 15px; height: 15px; position: absolute; top: 50%; right: 0   ; transform: translateY(-50%); background: url(../img/red_arr1.png) center center no-repeat; transition: all 0.5s;}
+
+#gnb > .list { border: 1px solid #464646;}
+#gnb > .list::after {content:''; display: block; clear: both;}
+#gnb > .list > li {float: left; width: 50%; text-align: center; box-sizing: border-box;}
+#gnb > .list > li + li {border-left: 1px solid #464646;}
+#gnb > .list > li > a {padding: 20px 0; display: block; width: 100%; height: 100%;}
+
+#gnb > .sns {padding: 60px 20px 20px;}
+#gnb > .sns::after {content:'' ;  display: block; clear: both;}
+#gnb > .sns > li {float: left; background-color: green;}
+#gnb > .sns > li + li {margin-left: 30px;}
+#gnb > .sns > li > a {display: block; text-indent: -999px; width: 20px; height: 20px; background-color: blue;}
+#gnb > .sns > li:nth-child(1) > a {background: url(../img/sns_irbg.jpg);}
+#gnb > .sns > li:nth-child(2) > a {background: url(../img/sns_irbg.jpg) no-repeat; background-position-x: -50px;}
+
+#gnb > .sites {}
+#gnb > .sites > li {box-sizing: border-box;}
+#gnb > .sites > li:nth-child(1) {border-top: 1px solid #464646; border-bottom: 1px solid #464646; background-color: #2a2a2a;}
+#gnb > .sites > li:not(:first-child) {border-bottom: 1px dashed #464646;}
+#gnb > .sites > li:last-child {border-bottom: 1px solid #464646;}
+#gnb > .sites > li > a {display: block; padding: 8px 15px; position: relative;}
+#gnb > .sites > li > a::after {content: ''; display: block; width: 6px; height: 6px; background: url(../img/red_arr_s1.png) center center no-repeat; position: absolute; right: 15px; top: 50%; transform: translateY(-50%);}
+#gnb > .sites > li > a > img {display: inline; position: relative; top: -2px;}
+#footer {padding: 20px 15px 5px;}
+
+
+#main { position: absolute; top: 0; padding-left: 160px; background-color: #fff; display: flex; }
+#main > article {width: 380px; height: 100vh; overflow: visible;  box-shadow:rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px; overflow: auto;}
+#main > article .image-box {width: 100%; height: 480px; box-sizing: border-box;}
+#main > article .image-box > a > img {height: 100%;}
+#main > article .image-box > a > iframe {height: 100%; width: 100%;}
+#main > article .text-box {width: 100%; padding: 60px 40px 0; box-sizing: border-box; border-top: 4px solid #ed1c24; background: url(../img/point_red.png) no-repeat top center;}
+#main > article .text-box > h4 {text-align: center; margin-bottom: 50px;}
+
+/* aritcle1 */
+#main > .article1 .text-box {padding-bottom: 100px;}
+.article1 ul.list {}
+.article1 ul.list > li {position: relative; margin-bottom: 30px;}
+.article1 ul.list > li > a.more {position: absolute; bottom: 0; right: 0;}
+.article1 ul.list > li > a {display: flex;}
+.article1 ul.list > li > a > div.image {width: 80px; height: 80px; margin-right: 20px;}
+.article1 ul.list > li:nth-child(1) > a > div.image {background: url(../img/bg_biz.jpg) no-repeat 0 -300px;}
+.article1 ul.list > li:nth-child(2) > a > div.image {background: url(../img/bg_biz.jpg) no-repeat 0 -750px;}
+.article1 ul.list > li:nth-child(3) > a > div.image {background: url(../img/bg_biz.jpg) no-repeat 0 -900px;}
+.article ul.list > li > a > div.desc > p.title {margin-bottom: 10px;}
+.article ul.list > li > a > div.desc > p.title > img {vertical-align: top;}
+
+/* article2 */
+.article2 ul.list {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.article2 ul.list > li {width: 40%; margin-bottom: 50px;}
+.article2 ul.list > li > a {}
+.article2 ul.list > li > a > div.image {width: 100%; height: 120px; background: url(../img/bg_company.jpg) 0 0 no-repeat;}
+.article2 ul.list > li:nth-child(2) > a > div.image { background: url(../img/bg_company.jpg)  -120px 0 no-repeat;}
+.article2 ul.list > li:nth-child(3) > a > div.image { background: url(../img/bg_company.jpg) -240px 0 no-repeat;}
+.article2 ul.list > li:nth-child(4) > a > div.image { background: url(../img/bg_company.jpg) -360px 0 no-repeat;}
+
+
+.article2 ul.list > li > a > div.desc > p.title {position: relative;}
+.article2 ul.list > li > a > div.desc > p.title::after {content:''; width: 10px; height: 12px; background: url(../img/red_arr_s1.png) center center no-repeat; position: absolute; right: 0; top: 0;}
+.article2 ul.list > li:nth-child(3) > a > div.desc > p.title::after {bottom: 0; top: auto;}
+
+/* article3 */
+.article3 {}
+#main > .article3 div.text-box {width: 100%; padding: 60px 0 0;}
+.article3 ul.list {}
+.article3 ul.list > li {padding: 50px 40px; position: relative;}
+.article3 ul.list > li:first-child {padding-top: 0;}
+.article3 ul.list > li + li { border-top: 1px solid #dfdfdf;}
+.article3 ul.list > li > div.title {display: flex; justify-content: space-between; margin-bottom: 20px;}
+.article3 ul.list > li > div.title > p.title {}
+.article3 ul.list > li > div.title  img {vertical-align: top;}
+.article3 ul.list > li > div.title > a.more   img:last-child {position: relative; top: 3px;}
+.article3 ul.list > li > div.content {}
+.article3 ul.list > li > div.content > a {display: flex; justify-content: space-between; align-items: center;}
+.article3 ul.list > li > div.content  figure {width: 100px; height: 75px; margin:0 20px 0 0; box-sizing: border-box;}
+.article3 ul.list > li > div.content  figure > img {height: 100%;}
+.article3 ul.list > li > div.content  div.text {width: 180px; line-height: 1.3;}
+.article3 ul.list > li > div.content  div.text > b {font-weight: 700; display: block; margin-bottom: 5px;}
+.article3 ul.list > li > div.content  div.text > span {font-weight: 500; display: block; letter-spacing: 0.4px;}
+
+.article3 ul.sub-list {margin: 20px 0;}
+.article3 ul.sub-list > li {}
+.article3 ul.sub-list > li + li {margin-top: 10px;}
+.article3 ul.sub-list > li > a {display: flex; justify-content: space-between; box-sizing: border-box; position: relative;  padding-left: 10px;}
+.article3 ul.sub-list > li > a::after {content:''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 2px; height: 2px; background-color: silver; border-radius: 10px;}
+
+.article3 ul.list > li > div.text {margin-bottom:20px;}
+.article3 ul.list > li > a.btn { display: block;}
+
+/* article4 */
+#main > .article4 div.text-box{padding: 60px 0;}
+.article4 div.notice-box,
+.article4 div.financial-box {padding: 40px;border-top: 1px solid #dfdfdf;}
+.article4 div.text-box > div > h5 {margin-bottom: 20px;}
+.article4 div.text-box > div > h5 > img {vertical-align: top;}
+.article4 div.notice-box > ul.list {}
+.article4 div.notice-box > ul.list > li {}
+.article4 div.notice-box > ul.list > li + li {margin-top: 5px;}
+.article4 div.notice-box > ul.list > li > a {display: flex; justify-content: space-between; position: relative; padding-left: 10px; box-sizing: border-box;}
+.article4 div.notice-box > ul.list > li > a::after {content:''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 2px; height: 2px; background-color: silver; border-radius: 10px;}
+.article4 div.notice-box > ul.list > li > a >span {font-size: 10px; font-weight: 700;}
+.article4 div.financial-box {}
+.article4 div.financial-box > div.content {}
+.article4 div.financial-box > div.content {display: flex; justify-content: space-between;}
+.article4 div.financial-box > div.content > figure{margin: 0;}
+.article4 div.financial-box > div.content > figure > img {height: 100%;}
+.article4 div.financial-box > div.content > div.text {}
+.article4 div.financial-box > div.content > div.text > img {margin-bottom: 10px;}
+.article4 div.financial-box > div.content > div.text > a.financial-more {display: block; margin-bottom: 10px;}
+.article4 div.financial-box > div.content > div.text > p {text-align: right;} 
+.article4 div.financial-box > div.content > div.text > p > a {display: block;}
+.article4 div.financial-box > div.content > div.text > p > a > img {vertical-align: bottom;}
+
+/* article5 */
+#main > .article5 iframe {border: none;}
+#main > .article5 iframe > a {display: block; width: 100%; height: 100%;}
+#main > .article5 div.text-box {padding: 150px 40px 250px; background: url(../img/bg_network.jpg) center center no-repeat; background-size: cover;}
+.article5 div.text-box > div.content {padding: 150px 0 0 120px;}
+.article5 div.text-box > div.content > p {margin-bottom: 20px;}
+
+/* btn */
+.btn a.on {background-color: #cb2f33;} 
+
+div.btn {position: fixed; right: 0; top: 50%; display: flex; }
+div.btn > a {background-color: rgba(0, 0, 0, 0.5); display: block; width: 70px; height: 70px;}
+div.btn > a {margin-right: 2px;}
