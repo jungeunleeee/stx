@@ -129,7 +129,7 @@
 .article4 div.financial-box > div.content > div.text > p > a > img {vertical-align: bottom;}
 
 /* article5 */
-#main > .article5 iframe {border: none;}
+#main > .article5 iframe {border: none; height: 100%; width: 100%;}
 #main > .article5 iframe > a {display: block; width: 100%; height: 100%;}
 #main > .article5 div.text-box {padding: 150px 40px 250px; background: url(../img/bg_network.jpg) center center no-repeat; background-size: cover;}
 .article5 div.text-box > div.content {padding: 150px 0 0 120px;}
